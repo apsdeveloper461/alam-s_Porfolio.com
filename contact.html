@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Alam's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <style></style>
+  </head>
+  <style>
+  
+  </style>
+  <body>
+    <header>
+      <nav id="nav_01">
+        <div id="logo"><span>Alam's Protfolio</span></div>
+        <div class="nav_option">
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="Service.html"><li>Service</li></a>
+            <a href="Project.html"><li>Portfolio Project</li></a>
+            <a href="contact.html"><li>Contact Me</li></a>
+          </ul>
+        </div>
+
+        <div id="dropdown_control">
+          <i class="fa-solid fa-bars" onclick="CheckDropdown()"></i>
+        </div>
+        <div id="alamPic"><img src="image/alam's.jpg" alt="" /></div>
+      </nav>
+      <nav class="nav_03" id="nav03">
+        <div class="removal" id="dropdown">
+          <div class="dropdown-option" id="option_1">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="dropdown-option" id="option_2">
+            <a href="about.html">About</a>
+          </div>
+          <div class="dropdown-option" id="option_3">
+            <a href="Service.html">Service</a>
+          </div>
+          <div class="dropdown-option" id="option_4">
+            <a href="Project.html">Portfolio Project</a>
+          </div>
+          <div class="dropdown-option" id="option_5">
+            <a href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="imgContainer">
+        <img src="image/ContectBg.jpg" alt="" />
+
+        <span>Contact Me</span>
+      </div>
+      <section id="ContactMe">
+        <h1>Contact Me</h1>
+        <hr class="long">
+        <div id="ContactForm">
+       <div class="Formelement">   
+         <label for="client_name" class="inputlabel">
+
+            <input class="inputContact"  type="text" name="name" id="client_name" required>
+            <span class="FormInfo"> <span class="FormLogo"><i class="fa-regular fa-user"></i></span><b>|</b><p>Full Name...</p></span>
+          </label></div>
+          <div class="Formelement">
+             <label for="phone_no">
+            
+            <input class="inputContact" type="number" name="Phone Number" id="phone_no" required>
+            <span class="FormInfo"><span class="FormLogo"><i class="fa-regular fa-user"></i></span><b>|</b><p>Phone Number...</p></span>
+          </label></div>
+          <div class="Formelement">
+            <label for="email">
+            
+            <input class="inputContact" type="email" name="email" id="email" required>
+            <span class="FormInfo"><span class="FormLogo"><i class="fa-regular fa-envelope"></i></span><b>|</b><p>Enter  Email...</p></span>
+          </label></div>
+          <div class="Formelement">
+            <label for="desc">
+          
+            <input class="inputContact" type="text" name="des" id="desc" required>
+            <span class="FormInfo">  <span class="FormLogo"><i class="fa-regular fa-user"></i></span><b>|</b><p>Detail of Work...</p></span>
+          </label></div>
+          <div class="Formelement">
+            <label for="checkBox">
+            <input type="checkbox"  id="checkbox"> If you want to hire me,Check this point.         
+          
+          </label></div>
+          <button class="btn-big" type="submit" value="Submit">Submit</button>
+        </div>
+        <br>
+        
+   <hr class="longer">
+   <div class="MyContact">
+    <h1>OR</h1>
+    <h3>You can Contact me on these Platform</h3>
+    <hr class="small">
+    <div id="Contact">
+      <span class="Info"> <i class="fa-regular fa-user"></i><b>|</b><a href="www.fb.com">@mehboobalam.apsDev.fb.com</a></span>
+      <span class="Info"><i class="fa-regular fa-user"></i><b>|</b><a href="www.gmail.com">mehboobalam786461@gmail.com</a></span>
+      <span class="Info"> <i class="fa-regular fa-user"></i><b>|</b><a href="www.inst.com">Apsdeveloper461.intagram.com</a></span>
+
+
+    </div>
+   </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footerPart_2">
+        <span
+          >&copysr; Copyright 2023 <b>alam's portfolio.com |</b> All Right
+          Reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  
+    </script>
+  </body>
+</html>

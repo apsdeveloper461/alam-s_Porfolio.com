@@ -1,0 +1,442 @@
+:root {
+  --nav_01-bg: rgb(14, 14, 34);
+  /* navbar and footer part 2 have same bg color */
+  --nav_02-bg: rgb(15, 2, 68);
+  --body-bg: rgb(2, 11, 53);
+  --navLogo-color: white;
+  --dropdown-bg: rgba(35, 35, 131, 0.667);
+  /* leftPart-container have same color of  navlogo colo */
+  --footerPart_2-color: rgb(145, 145, 145);
+  --footerPart_2-specialword-color: rgb(34, 167, 167);
+  --leftPart_ContainerSpecial-color: rgb(92, 92, 238);
+  --navLogo_hover-color: rgb(38, 38, 188);
+  --navOption-color: rgba(232, 218, 218, 0.809);
+  --navOption_hover-color: rgb(22, 82, 82);
+  --navOption_active-color: rgb(38, 38, 188);
+  --SearchButton--bg: white;
+  --color: white;
+  /* color for Home page or home section */
+  --TopSkill-bg: rgb(7, 11, 66);
+  --TopSkill_hover-bg: rgb(39, 39, 85);
+  --TopSkill_p-color: rgb(142, 177, 243);
+  --TopSkill_h2-color: white;
+  /* color for about section */
+  --About-h1-color: white;
+  --About-p-color: grey;
+  --About-span-color: rgb(101, 101, 181);
+
+  --top-imgBorder-color: rgb(0, 0, 34);
+  --img-Centertext-color: rgb(225, 224, 224);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1 {
+  color: var(--navLogo-color);
+  font-size: 2.5em;
+  margin: 1em 0px;
+  text-align: center;
+}
+h3 {
+  color: var(--About-p-color);
+  font-size: 1.5em;
+  margin: 0.5em 15px;
+  text-align: center;
+}
+body {
+  position: relative;
+  background: var(--body-bg);
+  overflow-x: hidden;
+}
+
+/* Top image css */
+.imgContainer {
+  font-size: 15px;
+  position: relative;
+}
+main .imgContainer img {
+  /* background: url(image/ProjectBg.jpg) no-repeat;
+  background-size: cover; */
+  width: 100vw;
+  height: 40vw;
+
+  border-bottom: 40px solid var(--top-imgBorder-color);
+}
+main .imgContainer span {
+  position: absolute;
+  left: 30%;
+  top: 32%;
+  font-size: 10vw;
+  color: var(--img-Centertext-color);
+  cursor: pointer;
+}
+/* color of nav option bg and footer color */
+
+#nav_01 {
+  height: 70px;
+  background: var(--nav_01-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav_01 #logo {
+  cursor: pointer;
+  color: var(--navLogo-color);
+  font-size: 25px;
+}
+#nav_01 #logo :hover {
+  color: var(--navLogo_hover-color);
+  transition: all 2s ease-in-out 0.2s;
+}
+.nav_option ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav_option ul a li {
+  color: var(--navOption-color);
+  font-size: 18px;
+  list-style: none;
+  margin: 0px 25px;
+}
+.nav_option ul a {
+  text-decoration: none;
+}
+.nav_option ul a li:hover {
+  color: var(--navOption_hover-color);
+  text-decoration: underline;
+}
+.nav_option ul a li:active {
+  font-size: 20px;
+  color: var(--navOption_active-color);
+  text-decoration: none;
+}
+#alamPic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.btn {
+  height: 23px;
+  width: 60px;
+  border: 2px solid var(--leftPart_ContainerSpecial-color);
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--SearchButton--bg);
+  color: var(--leftPart_ContainerSpecial-color);
+}
+.btn-big {
+  font-size: 15px;
+  height: 30px;
+  width: 70px;
+  border: 2px solid var(--leftPart_ContainerSpecial-color);
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--SearchButton--bg);
+  color: var(--leftPart_ContainerSpecial-color);
+}
+
+.btn-big:active,
+.btn:active {
+  margin-top: 2px;
+  background: var(--body-bg);
+}
+
+/* css for phone navoption i.e, drropdown for phone */
+
+#nav_01 #dropdown_control {
+  color: var(--navOption-color);
+  font-size: 2em;
+}
+#nav_01 #dropdown_control:hover {
+  color: var(--navOption_hover-color);
+}
+#nav_01 #dropdown_control:active {
+  color: var(--navOption_active-color);
+}
+.nav_03 {
+  display: none;
+}
+
+nav #dropdown {
+  background: var(--dropdown-bg);
+
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#dropdown .dropdown-option {
+  font-size: 16px;
+  padding: 4px 25px;
+  height: 24px;
+  border-bottom: 1px solid black;
+  /* display: none; */
+}
+#dropdown .dropdown-option a {
+  text-decoration: none;
+  color: var(--navOption-color);
+}
+#dropdown .dropdown-option a:hover {
+  color: var(--navOption_hover-color);
+  text-decoration: underline;
+}
+#dropdown .dropdown-option a:active {
+  font-size: 20px;
+  color: var(--navOption_active-color);
+  text-decoration: none;
+}
+/*____________ style for header is ended there____________ */
+
+/*--------- style for main body os stsrted here ----------*/
+
+main .mainContainer {
+  font-size: 16px;
+  margin: 0px 5px;
+  display: flex;
+}
+.mainContainer #rightPart_Container {
+  width: 50vw;
+  margin: 8vw 7vw;
+  flex-grow: 0;
+}
+#rightPart_Container img {
+  width: 20em;
+}
+.mainContainer #leftPart_Container {
+  width: 50vw;
+  margin-top: 7vw;
+  margin-left: 5vw;
+  padding: 5vw 5vw;
+  color: var(--color);
+  font-size: 2em;
+  flex-grow: 0;
+}
+.mainContainer #leftPart_Container span {
+  font-size: 1.3em;
+  color: var(--leftPart_ContainerSpecial-color);
+}
+/* css for Topskill i.e, Card */
+.TopSkill h1 {
+  text-align: center;
+  color: var(--navOption-color);
+  margin: 15px;
+}
+.TopSkill .grid {
+  margin: 50px 8vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid .grid_op {
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  height: 25rem;
+  width: 25vw;
+  background: var(--TopSkill-bg);
+  margin: 10px 1vw;
+  border-radius: 10px;
+}
+.grid .grid_op:hover {
+  background: var(--TopSkill_hover-bg);
+  transition: background 0.5s ease-in 0.1s;
+  transform: translate(-5px, -3px);
+}
+
+.grid_op img {
+  align-self: center;
+  margin-top: 3%;
+  height: 35%;
+  width: 80%;
+  border-radius: 10px;
+}
+.grid_op h2 {
+  text-align: center;
+  color: var(--TopSkill_h2-color);
+  margin: 2px 5px;
+  padding: 20px 5px;
+}
+.grid_op div {
+  text-align: left;
+
+  color: var(--TopSkill_p-color);
+  margin: 15px 1px;
+}
+.grid_op div p {
+  line-height: 20px;
+  padding-left: 10px;
+}
+.longer {
+  margin: 20px 3vw;
+}
+.long {
+  margin: 20px 8vw;
+}
+.small {
+  margin: 20px 15vw;
+}
+.so-small {
+  margin: 20px 25vw;
+}
+
+#aboutme {
+  font-size: 15px;
+  margin: 50px 7px;
+}
+#aboutme h1 {
+  font-size: 1.5em;
+  color: var(--About-h1-color);
+  text-align: center;
+  padding: 10px 0;
+}
+#aboutme p {
+  padding: 20px 10vw;
+  font-size: 1em;
+  color: var(--About-p-color);
+  text-align: center;
+}
+#aboutme p span {
+  color: var(--About-span-color);
+}
+.feedback {
+  margin: 40px 8vw;
+  position: relative;
+  width: 80vw;
+  height: 100px;
+}
+.feedback textarea {
+  border-radius: 10px;
+  background: var(--TopSkill-bg);
+  color: var(--navOption-color);
+  font-size: 15px;
+  padding-top: 15px;
+  outline: none;
+  width: 80vw;
+  height: 100px;
+  padding-left: 5px;
+}
+.feedback textarea:focus {
+  border: 2px solid var(--navOption-color);
+}
+.feedback button {
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+}
+.feedback button:active {
+  margin-top: 2px;
+  background: var(--body-bg);
+}
+
+/* __________css for contact page-__________ */
+#ContactMe {
+  font-size: 16px;
+  margin-top: 100px;
+}
+
+#ContactMe #ContactForm {
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Formelement {
+  color: var(--About-p-color);
+}
+.Formelement {
+  position: relative;
+  margin: 15px 0;
+}
+.inputContact {
+  font-size: 1.1em;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--leftPart_ContainerSpecial-color);
+  border-radius: 2%;
+  height: 40px;
+  width: 25vw;
+  background: transparent;
+  color: var(--About-h1-color);
+  padding-left: 57px;
+}
+div.Formelement input:focus ~ span p,
+div.Formelement input:valid ~ span p {
+  display: none;
+}
+.FormInfo {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  font-size: 1em;
+  left: 4%;
+}
+.FormInfo .FormLogo {
+  margin-right: 10px;
+  color: var(--About-h1-color);
+}
+.FormInfo p {
+  margin-left: 15px;
+}
+.FormInfo b {
+  color: var(--leftPart_ContainerSpecial-color);
+}
+div#Contact {
+  font-size: 15px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div#Contact .Info {
+  color: var(--About-h1-color);
+  margin: 15px;
+  border-bottom: 0.1px solid var(--About-h1-color);
+  padding-bottom: 10px;
+}
+.Info i {
+  margin-right: 10px;
+}
+.Info b {
+  color: var(--leftPart_ContainerSpecial-color);
+}
+.Info a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: var(--About-p-color);
+}
+.Info a:hover {
+  color: var(--leftPart_ContainerSpecial-color);
+  transition: all 1s ease-in-out 0.1s;
+}
+.Info a:active {
+  color: var(--About-h1-color);
+}
+
+/*________ style for main is ended there__________ */
+
+/*-------- style for footer is started here-------- */
+#footerPart_2 {
+  margin-top: 10px;
+  background: var(--nav_01-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--footerPart_2-color);
+}
+#footerPart_2 span {
+  padding: 25px 3px;
+}
+#footerPart_2 span b {
+  color: var(--footerPart_2-specialword-color);
+}
+/*____________ style for footer is ended there___________ */

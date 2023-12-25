@@ -1,0 +1,95 @@
+@media screen and (max-width: 850px) {
+  .nav_option ul a li {
+    font-size: 15px;
+    margin: 0px 10px;
+  }
+  #nav_02 .searchBar {
+    margin-right: 02px;
+  }
+  .mainContainer {
+    font-size: 10px;
+  }
+  .mainContainer #rightPart_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 25vw; */
+    /* margin: 70px 3vw; */
+  }
+
+  #rightPart_Container img {
+    width: 12em;
+  }
+  input.inputContact {
+    width: 50vw;
+  }
+}
+@media (max-width: 550px) {
+  #nav_01 #logo {
+    justify-self: start;
+  }
+  #nav_01 .nav_option {
+    display: none;
+  }
+  section .mainContainer {
+    font-size: 10px;
+  }
+
+  #rightPart_Container img {
+    width: 10em;
+  }
+  .mainContainer #rightPart_Container {
+    width: auto;
+    justify-content: end;
+  }
+  .TopSkill .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid .grid_op {
+    min-width: 40vw;
+  }
+  .grid_op div {
+    margin: 0px;
+  }
+
+  #thirdgrid {
+    margin-top: 5vw;
+    margin-left: 22vw;
+  }
+  input.inputContact {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .TopSkill .grid {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .grid .grid_op {
+    min-width: 80vw;
+    margin: 15px auto;
+  }
+  .grid_op div {
+    margin: 0px;
+  }
+
+  #thirdgrid,
+  #secondgrid,
+  #firstgrid {
+    margin-top: 5vw;
+    margin-left: 5vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  #rightPart_Container img {
+    display: none;
+  }
+}
+@media screen and (min-width: 550px) {
+  #nav_01 #dropdown_control {
+    display: none;
+  }
+}
